@@ -2,8 +2,8 @@ package org.casting;
 
 public class Main {
     public static void main(String[] args) {
-        // Implicit casting:
-        // byte > short > int > long > float > double => automatically
+        // Implicit casting (automatically):  converting a smaller type to a larger type size
+        // byte -> short -> char -> int -> long -> float -> double
         short x = 1;
         int y = x + 2;
         System.out.println(y); // 3;
@@ -19,7 +19,8 @@ public class Main {
         double t = z + 2; //java cast 2 to double ,so it would be 2.0 and add it to z
         System.out.println(t); // 3.1;
 
-        // Explicit casting
+        // Explicit casting (manually): converting a larger type to a smaller size type
+        // double -> float -> long -> int -> char -> short -> byte
         double a = 1.1;
         int b = (int)a + 2;// we convert a double var to an int var
         System.out.println(b);
